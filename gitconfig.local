@@ -1,0 +1,20 @@
+[alias]
+  l = log --pretty=colored
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+[mergetool "vimdiff"]
+  cmd = vimdiff -f $LOCAL $MERGED $REMOTE
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[user]
+  name = Jamie Barton
+  email = jamie@codethisway.com
+[core]
+  editor = vim
+  whitespace = trailing-space,cr-at-eol
+[grep]
+  lineNumber = true
+[github]
+  user = notrab
