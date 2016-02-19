@@ -1,3 +1,14 @@
 set background=dark
 let base16colorspace=256
 colorscheme base16-default
+
+let g:ctrlp_map = '<leader>f'
+let g:ctrlp_cmd = 'CtrlP'
+
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
+autocmd VimResized * wincmd =
+
+set noesckeys
+set ttimeout
+set ttimeoutlen=1
