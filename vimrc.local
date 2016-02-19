@@ -12,3 +12,4 @@ autocmd VimResized * wincmd =
 set noesckeys
 set ttimeout
 set ttimeoutlen=1
+set relativenumber
