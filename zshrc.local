@@ -1,2 +1,15 @@
 BASE16_SHELL="$HOME/.zsh/configs/base16-shell/base16-tomorrow.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+export PATH="$HOME/.node/bin:$PATH"
+export PATH=$PATH:/usr/local/share/npm/bin
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.node/bin:$PATH"
+export PATH=$PATH:/usr/local/share/npm/bin
+export PATH="$HOME/.bin:$PATH"
+
+if which tmux 2>&1 >/dev/null; then
+  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+    tmux attach -t hack || tmux new -s hack; exit
+  fi
+fi

@@ -1,5 +1,5 @@
-set background=dark
 let base16colorspace=256
+set background=dark
 colorscheme base16-default
 
 let g:ctrlp_map = '<leader>f'
