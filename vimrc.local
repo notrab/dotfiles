@@ -13,3 +13,15 @@ set noesckeys
 set ttimeout
 set ttimeoutlen=1
 set relativenumber
+set pastetoggle=<F2>
+set nocompatible
+set gdefault
+set softtabstop=2
+set copyindent
+
+if version >= 700
+  au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
+  au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
+endif
+
+set wildignore+=tmp/**,*.scssc,*.sassc,*/bower_components/*,*/node_modules/*,*.jpg,*.png,*.gif,*.pdf
