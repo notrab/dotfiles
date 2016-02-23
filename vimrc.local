@@ -25,3 +25,12 @@ if version >= 700
 endif
 
 set wildignore+=tmp/**,*.scssc,*.sassc,*/bower_components/*,*/node_modules/*,*.jpg,*.png,*.gif,*.pdf
+
+noremap S :w<CR>
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+nmap gV `[v`]
+map <leader>u :call OpenURI()<CR>
+vnoremap > >gv
+vnoremap < <gv
+command! W w

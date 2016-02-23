@@ -3,7 +3,7 @@ bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 bind c new-window -c '#{pane_current_path}'
 
 set -g status-interval 30
-set -g status-left '[#S]'
+set -g status-left '[#S] '
 set -g status-right "#{?pane_synchronized,--SYNCED--,} #(battery -t -g black) #(date '+%a, %b %d - %I:%M') "
 
 bind-key - split-window -v -c '#{pane_current_path}'
@@ -24,3 +24,9 @@ bind -n C-Left resize-pane -L 10
 bind -n C-Right resize-pane -R 10
 bind -n C-Down resize-pane -D 5
 bind -n C-Up resize-pane -U 5
+
+bind-key x kill-pane
+bind-key & kill-window
+
+set-window-option -g window-status-current-bg yellow
+set-window-option -g window-status-current-fg black
