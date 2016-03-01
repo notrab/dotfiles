@@ -11,13 +11,16 @@ autocmd VimResized * wincmd =
 
 set noesckeys
 set ttimeout
-set ttimeoutlen=1
+set timeoutlen=1000
+set ttimeoutlen=0
 set relativenumber
 set pastetoggle=<F2>
 set nocompatible
 set gdefault
 set softtabstop=2
 set copyindent
+set shortmess=a
+set cmdheight=2
 
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
