@@ -21,6 +21,14 @@ set softtabstop=2
 set copyindent
 set shortmess=a
 set cmdheight=2
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set winwidth=84
+set winheight=45
+set winminheight=20
+set winheight=999
 
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
@@ -37,3 +45,4 @@ map <leader>u :call OpenURI()<CR>
 vnoremap > >gv
 vnoremap < <gv
 command! W w
+nmap <leader>h :nohlsearch<CR>
