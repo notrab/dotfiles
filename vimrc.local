@@ -25,10 +25,10 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
-set winwidth=84
-set winheight=45
-set winminheight=20
-set winheight=999
+" set winwidth=84
+" set winheight=45
+" set winminheight=20
+" set winheight=999
 
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
