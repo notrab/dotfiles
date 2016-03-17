@@ -18,3 +18,5 @@
   lineNumber = true
 [github]
   user = notrab
+[credential]
+  helper = osxkeychain
