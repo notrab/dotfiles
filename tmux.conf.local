@@ -5,6 +5,7 @@ bind c new-window -c '#{pane_current_path}'
 set -s escape-time 0
 
 set -g status-interval 30
+set -g status-left-length 20
 set -g status-left '[#S] '
 set -g status-right "#{?pane_synchronized,--SYNCED--,} #(battery -t -g black) #(date '+%a, %b %d - %I:%M') "
 
