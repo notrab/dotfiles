@@ -1,5 +1,5 @@
 # Silence the boot chime
-sudo nvram SystemAudioVolume=” “
+sudo nvram SystemAudioVolume=" "
 
 # Add host info to the login screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
