@@ -5,3 +5,16 @@ alias be="bundle exec"
 alias b="bundle install"
 alias rs="bin/rails s"
 alias gph="git push heroku master"
+
+function docker-clean() {
+  docker rmi -f $(docker images -q -a -f dangling=true)
+}
+
+function dm-env() {
+  eval "$(docker-machine env "${1:-default}")"
+}
+
+alias dcl="docker-clean"
+alias dm="docker-machine"
+alias dml="docker-machine ls"
+alias de="env | grep DOCKER_"

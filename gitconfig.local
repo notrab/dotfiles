@@ -1,5 +1,7 @@
 [alias]
   l = log --pretty=colored
+  p = push
+  ph = push heroku master
 [diff]
   tool = vimdiff
 [merge]

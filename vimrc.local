@@ -1,12 +1,11 @@
-" let base16colorspace=256
 syntax enable
 set background=dark
 colorscheme solarized
-" let g:tmuxline_powerline_separators = 0
-let g:airline_powerline_fonts = 1
 
+let g:airline_powerline_fonts = 1
 let g:ctrlp_map = '<leader>f'
 let g:ctrlp_cmd = 'CtrlP'
+let g:rspec_command = "Dispatch rspec {spec}"
 
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
@@ -28,10 +27,11 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
-" set winwidth=84
-" set winheight=45
-" set winminheight=20
-" set winheight=999
+set winwidth=84
+set winheight=45
+set winminheight=20
+set winheight=999
+set noshowmode
 
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
