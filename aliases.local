@@ -4,6 +4,12 @@ alias l="ls -la"
 alias be="bundle exec"
 alias b="bundle install"
 alias rs="bin/rails s"
+alias rc="bin/rails c"
+
+alias git="hub"
+alias h="git"
+alias gp="h push"
+alias gpu="h pull"
 alias gph="git push heroku master"
 
 function docker-clean() {

@@ -1,3 +1,5 @@
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
 export PATH="$PATH:/usr/local/share/npm/bin"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
