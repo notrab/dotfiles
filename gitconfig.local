@@ -1,0 +1,32 @@
+[user]
+  name = Jamie Barton
+  email = jamie@notrab.dev
+[shell]
+  username = notrab
+[github]
+  username = notrab
+[credential]
+	helper = osxkeychain
+[core]
+  editor = atom --wait
+  whitespace = trailing-space,cr-at-eol
+[alias]
+  unstage = reset HEAD
+  undo-commit = reset --soft HEAD^
+  b = branch
+  di = diff
+  aa = add --all
+  amend = commit --amend
+  fa = fetch --all
+  r = rebase
+  rc = rebase --continue
+  ra = rebase --abort
+  rs = rebase --skip
+  cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
+[pull]
+  rebase = true
+[push]
+  default = simple
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always

@@ -1,0 +1,70 @@
+#!/bin/sh
+
+brew bundle --file=- <<EOF
+brew 'httpie'
+brew 'highlight'
+brew 'yarn'
+brew 'mysql'
+brew 'tree'
+brew 'gist'
+brew 'speedtest_cli'
+brew 'mongodb'
+brew 'rethinkdb'
+brew 'watchman'
+brew 'flow'
+brew 'openssl'
+brew 'certbot'
+brew 'ssh-copy-id'
+brew 'shellcheck'
+brew 'jsonlint'
+brew `zplug`
+
+tap 'caskroom/cask'
+
+cask 'visual-studio-code'
+cask 'google-chrome'
+cask 'spotify'
+cask 'vlc'
+cask 'ngrok'
+cask 'postman'
+cask 'sketch'
+cask 'spectacle'
+cask 'the-unarchiver'
+cask 'slack'
+cask 'hyper'
+cask 'telegram'
+cask 'insomnia'
+cask '1password'
+
+cask 'quicklook-json'
+cask 'quicklook-csv'
+cask 'suspicious-package'
+cask 'betterzipql'
+cask 'webpquicklook'
+cask 'qlprettypatch'
+cask 'qlstephen'
+cask 'qlmarkdown'
+cask 'gqlcolorcode'
+EOF
+
+fancy_echo "Installing some default gems..."
+gem_install_or_update "rails"
+gem_install_or_update "mailcatcher"
+
+fancy_echo "Modifying macOS defaults..."
+sh ./.osx_defaults.sh
+
+fancy_echo "Installing some default NPM packages..."
+npm install -g pure-prompt
+npm install -g json
+npm install -g prisma
+npm install -g graphql-cli
+
+fancy_echo "Cleaning up..."
+brew cleanup
+brew cask cleanup
+
+if [ -r "$HOME/.rcrc" ]; then
+  fancy_echo "Updating dotfiles ..."
+  rcup
+fi

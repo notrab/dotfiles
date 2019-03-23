@@ -1,0 +1,4 @@
+--skip-test-unit
+--database=postgresql
+--skip-turbolinks
+--skip-keeps

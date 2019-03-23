@@ -1,0 +1,32 @@
+alias edf="cd ~/dotfiles-local && vim ."
+alias hosts="sudo atom /etc/hosts"
+
+alias l="ll"
+alias bc="bundle check"
+alias be="bundle exec"
+alias rs="bin/rails s"
+alias rc="bin/rails c"
+
+alias gcb="g checkout -b "
+alias gp="g push"
+alias gfu="g fetch upstream"
+alias gpu="g pull"
+alias gph="git push heroku master"
+
+alias h="heroku"
+alias h="h run rake db:migrate"
+alias ho="h open"
+alias hrc="h run rails console -r heroku"
+alias hl="h logs -t -r heroku"
+
+alias ta="tmux attach"
+
+alias cra=create-react-app
+alias gc=graphcool
+alias v="vim"
+alias ws "python -m http.server"
+alias rr "source $HOME/.zshrc; and clear"
+alias cls="clear"
+alias sshkey "cat ~/.ssh/id_rsa.pub | pbcopy; and echo 'Copied to clipboard.'"
+
+alias cys="code . && yarn start"
