@@ -17,6 +17,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
 export PATH="$PATH:$HOME/.yarn/bin"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 autoload -U promptinit; promptinit
 prompt pure

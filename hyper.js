@@ -14,10 +14,7 @@ module.exports = {
   enableVibrancy: true,
 
   plugins: [
-    'hyper-halcyon-theme',
-    // 'hyperterm-palenight',
-    // 'hyperterm-oceanic-next', 
-    // 'hyper-sierra',
+    'hyper-sierra',
     // 'hyper-dracula',
     // 'verminal',
     'hypercwd'
